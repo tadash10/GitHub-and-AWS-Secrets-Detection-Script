@@ -1,21 +1,4 @@
- In a real-world scenario, sophisticated penetration testing involves a more detailed and nuanced approach. Here’s a comprehensive Python-based approach to detect and exploit a CI/CD vulnerability, incorporating real-world methods and tools. This will include:
 
-    Scanning for Exposed Secrets: Use tools to scan public repositories and configurations for secrets.
-    Exploiting Vulnerabilities: Demonstrate how discovered secrets might be used to gain unauthorized access or perform malicious actions.
-
-Disclaimer
-
-Disclaimer: This script is for educational purposes only and should only be used in controlled environments with explicit permission. Unauthorized access or exploitation of systems is illegal and unethical.
-Requirements
-
-    Python libraries: requests, gitpython, boto3, pygithub.
-    External tools: GitHub's API and AWS SDK.
-
-First, install the necessary Python libraries:
-
-
-pip install requests gitpython boto3 PyGithub
-Python Script for Real-World Scenario
 
 import requests
 import re

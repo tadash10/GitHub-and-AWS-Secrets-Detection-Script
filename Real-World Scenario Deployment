@@ -1,0 +1,63 @@
+Real-World Scenario Deployment
+
+As a senior penetration tester evaluating a candidate's skills, you would want to design a realistic simulation that tests their ability to perform a sophisticated and comprehensive security assessment. Here's a scenario for the candidate, including a disclaimer and clear scope.
+Real-World Scenario: GitHub and AWS Security Assessment
+Scenario Overview
+
+In this simulated attack scenario, the candidate is tasked with assessing the security of a fictional banking application deployed on AWS, where sensitive configurations and secrets might be exposed through GitHub repositories. The objective is to identify and exploit any secrets that could potentially compromise the security of the application or AWS infrastructure.
+Scope
+
+    Target Environment:
+        GitHub Repository: A private GitHub repository containing configurations and code for the fictional banking application. The repository might include sensitive configuration files, such as .env files or configuration scripts.
+        AWS Infrastructure: An AWS environment where the application is deployed. The environment includes S3 buckets, IAM roles, and other AWS resources that could be targeted if credentials are discovered.
+
+    Objective:
+        Discovery: Identify and extract secrets (e.g., AWS credentials, GitHub tokens, API keys) from the GitHub repository.
+        Exploitation: Simulate exploitation of the discovered secrets to:
+            Access AWS resources such as S3 buckets.
+            Perform actions using discovered GitHub tokens.
+            Demonstrate the potential impact of the secrets.
+
+    Allowed Actions:
+        GitHub Repository:
+            Fetch and search files within the repository.
+            Analyze content for sensitive information using regex patterns.
+        AWS Infrastructure:
+            Test access to S3 buckets using discovered AWS credentials.
+            Simulate actions based on the type of secrets found.
+
+    Prohibited Actions:
+        No Unauthorized Access: Do not attempt to access or modify any resources outside the provided scope or the fictional environment.
+        No Data Modification: Do not alter or delete any data in the repository or AWS environment.
+        No Social Engineering: The scope is limited to technical exploitation of secrets; social engineering or phishing is not allowed.
+
+Execution Steps
+
+    Information Gathering:
+        Identify the GitHub repository URL and relevant file paths where secrets might be located.
+        Gather details about the AWS environment, including potential S3 buckets and IAM roles.
+
+    Secret Discovery:
+        Use the provided script to search for secrets in the specified GitHub repository.
+        Document the types and values of secrets discovered.
+
+    Exploitation:
+        Attempt to access AWS S3 buckets using discovered AWS credentials.
+        Use GitHub tokens to perform actions like listing repositories or accessing private content.
+        Simulate API key exploitation to demonstrate potential misuse.
+
+    Reporting:
+        Provide a detailed report outlining the findings, including:
+            Secrets discovered and their potential impact.
+            Actions taken during the simulation.
+            Recommendations for securing the repository and AWS environment.
+
+Disclaimer
+
+Important: This simulated attack is conducted within a controlled and authorized environment. Unauthorized access or tampering with real-world systems or data is illegal and unethical. This exercise is intended solely for educational and assessment purposes. All actions performed should comply with the agreed scope and ethical guidelines. The results should be reported to the relevant stakeholders in a responsible and constructive manner.
+Contact and Support
+
+For any questions or clarifications regarding the scenario, please contact:
+
+    Penetration Testing Lead: T1
+  

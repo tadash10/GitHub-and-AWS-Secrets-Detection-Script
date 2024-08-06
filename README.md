@@ -1,7 +1,7 @@
 GitHub and AWS Secrets Detection Script
 
 This script is designed to simulate the detection and exploitation of secrets (e.g., AWS credentials, GitHub tokens, API keys) found in files within a GitHub repository. It showcases basic techniques used in penetration testing and security assessments.
-Features
+Features:
 
     Fetches files from a GitHub repository.
     Searches for secrets in specified files using regex patterns.
@@ -21,8 +21,6 @@ Setup Instructions
 
     If you have a repository URL, you can clone it using Git:
 
-    bash
-
 git clone https://github.com/your-repo-url.git
 cd your-repo-directory
 
@@ -30,7 +28,7 @@ Install Required Libraries
 
 Install the necessary Python libraries using pip. You can do this by running:
 
-bash
+bash :
 
 pip install requests boto3 PyGithub
 
@@ -40,13 +38,12 @@ Set up the required environment variables for GitHub and AWS:
 
     GitHub Token: Set the GitHub token as an environment variable. This token is needed to access private repositories.
 
-    bash
 
 export GITHUB_TOKEN='your_github_token_here'
 
 AWS Region (optional): If you need to use a region other than us-west-2, set the AWS region as an environment variable:
 
-bash
+bash:
 
     export AWS_REGION='your_aws_region_here'
 
@@ -77,7 +74,6 @@ Running the Script
 
 Run the script from the command line:
 
-bash
 
 python secrets_detection_script.py
 

@@ -16,13 +16,10 @@ Before running the script, ensure you have the following:
     Required Python Libraries: The script uses several Python libraries that need to be installed.
 
 Setup Instructions
-
-    Clone the Repository
-
-    If you have a repository URL, you can clone it using Git:
-
-git clone https://github.com/your-repo-url.git
-cd your-repo-directory
+  Clone the Repository
+    If you have a repository URL, you can clone it using Git: 
+        
+            git clone https://github.com/your-repo-url.git cd your-repo-directory
 
 Install Required Libraries
 
@@ -30,16 +27,15 @@ Install the necessary Python libraries using pip. You can do this by running:
 
 bash :
 
-pip install requests boto3 PyGithub
+      pip install requests boto3 PyGithub
 
 Configure Environment Variables
 
 Set up the required environment variables for GitHub and AWS:
 
-    GitHub Token: Set the GitHub token as an environment variable. This token is needed to access private repositories.
+GitHub Token: Set the GitHub token as an environment variable. This token is needed to access private repositories.
 
-
-export GITHUB_TOKEN='your_github_token_here'
+      export GITHUB_TOKEN='your_github_token_here'
 
 AWS Region (optional): If you need to use a region other than us-west-2, set the AWS region as an environment variable:
 
